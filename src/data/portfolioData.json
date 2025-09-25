@@ -1,0 +1,290 @@
+{
+    "personal": {
+        "fullName": "Muhammad Asror Alva",
+        "role": "Informatics Engineering  | Fullstack & Data Enthusiast",
+        "profileImage": "/images/me.jpg",
+        "email": "asroralva1905@gmail.com",
+        "phone": "+6289678904782",
+        "location": "Bogor, Jawa Barat",
+        "resumeUrl": "/resume.pdf"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "description": "I'm passionate about programming and building innovative software solutions that enhance efficiency, optimize processes, and support smarter decision-making.",
+        "ctaButtons": [{
+                "text": "View Resume",
+                "type": "primary",
+                "action": "download"
+            },
+            {
+                "text": "Contact Me",
+                "type": "secondary",
+                "action": "scroll",
+                "target": "contact"
+            }
+        ]
+    },
+    "about": {
+        "description": "I am an Informatics Engineering graduate with a strong passion for programming and software development. My journey began with curiosity about how technology can solve real-world problems. I combine technical expertise with creative problem-solving to build efficient, reliable, and impactful solutions.",
+        "education": {
+            "degree": "Associate Degree in Informatics Engineering",
+            "university": "Sebelas Maret University",
+            "year": "2022 - 2025",
+            "gpa": "3.58/4.0"
+        },
+        "careerGoals": "My goal is to become a skilled software developer who can design and build reliable, efficient, and scalable applications. I'm particularly interested in exploring modern technologies, clean code practices, and innovative solutions that solve real-world problems."
+    },
+    "skills": {
+        "hardSkills": [{
+                "name": "Python",
+                "level": 90,
+                "icon": "/icons/python.png"
+            },
+            {
+                "name": "SQL",
+                "level": 85,
+                "icon": "/icons/sql.png"
+            },
+            {
+                "name": "Laravel 10",
+                "level": 80,
+                "icon": "/icons/php.png"
+            },
+            {
+                "name": "JavaScript",
+                "level": 75,
+                "icon": "/icons/js.png"
+            },
+            {
+                "name": "CodeIgniter 4",
+                "level": 70,
+                "icon": "/icons/ci.png"
+            },
+            {
+                "name": "Dart",
+                "level": 65,
+                "icon": "/icons/dart.png"
+            },
+            {
+                "name": "Golang",
+                "level": 50,
+                "icon": "/icons/golang.png"
+            }
+
+        ],
+        "softSkills": [{
+                "name": "Problem Solving",
+                "icon": "Lightbulb"
+            },
+            {
+                "name": "Communication",
+                "icon": "MessageCircle"
+            },
+            {
+                "name": "Teamwork",
+                "icon": "Users"
+            },
+            {
+                "name": "Critical Thinking",
+                "icon": "Search"
+            },
+            {
+                "name": "Time Management",
+                "icon": "Clock"
+            },
+            {
+                "name": "Adaptability",
+                "icon": "RefreshCw"
+            },
+            {
+                "name": "Microsoft Office",
+                "icon": "FileText"
+            },
+            {
+                "name": "Google Workspace",
+                "icon": "Globe"
+            }
+
+        ]
+    },
+    "projects": [{
+
+            "id": 1,
+            "title": "Mobile Developer Trip Plan",
+            "description": "Developed a mobile application for managing and planning trip itineraries with features such as schedule management, destination details, and user-friendly interface.",
+            "image": "/images/Project/MobileTripPlan.png",
+            "technologies": ["Flutter", "Dart", "Laravel 10", "MySql", "REST API"],
+            "githubUrl": "https://github.com/AlvaaPy/mobile-permatawisata.git",
+            "liveUrl": "https://be.permata.tifpsdku.com/",
+            "featured": true,
+            "category": "Mobile Development"
+        },
+
+        {
+            "id": 2,
+            "title": "Trip Planner Budget Optimization",
+            "description": "Web application that helps users plan trips efficiently by minimizing costs. Features include destination selection, budget estimation, and optimized travel itinerary.",
+            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=300&fit=crop",
+            "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+            "githubUrl": "https://github.com/AsrorAlva/backend-tripplanner-web.git",
+            "liveUrl": "https://github.com/AsrorAlva/frontend-tripplanner-web.git",
+            "featured": true,
+            "category": "Web Development"
+        },
+        {
+            "id": 3,
+            "title": "Notes App",
+            "description": "A full-stack notes management web application built with Next.js and PostgreSQL. Features include user authentication, create/read/update/delete notes, and responsive UI for seamless note-taking.",
+            "image": "/images/Project/Notes.png",
+            "technologies": ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+            "githubUrl": "https://github.com/AlvaaPy/notes-app-nextjs.git",
+            "featured": true,
+            "category": "Web Development"
+        },
+
+        {
+            "id": 4,
+            "title": "Audio to Text Converter",
+            "description": "A Python-based tool that converts audio recordings into text. Supports multiple audio formats and provides accurate transcription for easier content processing.",
+            "image": "/images/Project/audio-text.png",
+            "technologies": ["Python", "OpenAI Whisper", "FFmpeg", "Regex"],
+            "githubUrl": "https://github.com/AsrorAlva/import-audio-to-text.git",
+            "liveUrl": "",
+            "featured": false,
+            "category": "Python Project"
+        },
+
+        {
+            "id": 5,
+            "title": "CMS Admin Dashboard",
+            "description": "Content Management System dashboard for managing marketing, IT, human capital, and product data, built with Node.js, Express, Sequelize, and MySQL.",
+            "image": "https://images.unsplash.com/photo-1581091870622-6c54e2901edb?w=500&h=300&fit=crop",
+            "technologies": ["Node.js", "Express", "MySQL", "Sequelize", "React"],
+            "githubUrl": "https://github.com/AlvaaPy/CMS.git",
+            "liveUrl": "",
+            "featured": false,
+            "category": "Web Development"
+        },
+
+        {
+            "id": 6,
+            "title": "Netflix Clone App",
+            "description": "A mobile application clone of Netflix built with Dart and Flutter, featuring movie listings, search functionality, and a responsive UI for seamless streaming experience.",
+            "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop",
+            "technologies": ["Dart", "Flutter", "SQLite"],
+            "githubUrl": "https://github.com/AsrorAlva/Netflix-.git",
+            "liveUrl": "",
+            "featured": false,
+            "category": "Mobile Development"
+        }
+
+    ],
+    "experience": [{
+            "id": 1,
+            "title": "Fullstack Programming Instructor Intern",
+            "company": "MSIB - PT Artifisial Indonesia",
+            "location": "Remote / Indonesia",
+            "startDate": "September 2024",
+            "endDate": "December 2024",
+            "type": "Internship",
+            "description": "Worked as an instructor for Fullstack Programming, guiding students in hands-on projects and mentoring them through the learning process.",
+            "achievements": [
+                "Conducted coding workshops and mentoring sessions for students",
+                "Assisted in curriculum development for fullstack programming",
+                "Provided feedback and guidance for student projects"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Mobile Developer Intern",
+            "company": "PT Permata Wisata",
+            "location": "Indonesia",
+            "startDate": "September 2024",
+            "endDate": "January 2025",
+            "type": "Internship",
+            "description": "Developed a Trip Planner mobile application to improve travel management for the company.",
+            "achievements": [
+                "Built and deployed mobile app features to enhance user experience",
+                "Collaborated with team members on app design and implementation",
+                "Tested and debugged applications to ensure quality and performance"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Project-Based Learning Participant",
+            "company": "PT E-Fishery",
+            "location": "Indonesia",
+            "startDate": "February 2024",
+            "endDate": "July 2024",
+            "type": "Project-Based Learning",
+            "description": "Worked on a web Trip Planner project aimed at minimizing travel budgets for users. Project focused on planning and feasibility, though it was not deployed.",
+            "achievements": [
+                "Designed and planned web-based trip planner solution",
+                "Collaborated with team members to develop project requirements",
+                "Applied problem-solving and design thinking in project planning"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "VR Borobudur Project (Final Year Thesis)",
+            "company": "Sebelas Maret University & KBRI Hungary",
+            "location": "Indonesia / Hungary",
+            "startDate": "February 2025",
+            "endDate": "September 2025",
+            "type": "Tugas Akhir",
+            "description": "Developed a VR experience of Candi Borobudur for Oculus Quest 2, focusing on immersive educational and cultural content. Collaborated with KBRI Hungary for cultural dissemination.",
+            "achievements": [
+                "Designed and implemented immersive VR zones representing Candi Borobudur",
+                "Optimized user experience to maximize engagement and interactivity",
+                "Coordinated with international stakeholders to ensure cultural accuracy"
+            ]
+        }
+
+    ],
+    "socialMedia": [{
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/asroralva/",
+            "icon": "/icons/linkedin.png"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/AsrorAlva",
+            "icon": "/icons/github.png"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/AlvaaPy",
+            "icon": "/icons/github.png"
+        },
+        {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/asroralva/#",
+            "icon": "/icons/ig.png"
+        },
+        {
+            "platform": "Twitter",
+            "url": "https://x.com/asroralva",
+            "icon": "/icons/x.png"
+        }
+    ],
+    "footer": {
+        "copyright": " © 2025 Muhammad Asror Alva. All rights reserved.",
+        "navigation": [{
+                "name": "Home",
+                "href": "/"
+            },
+            {
+                "name": "About",
+                "href": "/#about"
+            },
+            {
+                "name": "Projects",
+                "href": "/projects"
+            },
+            {
+                "name": "Contact",
+                "href": "/#contact"
+            }
+        ]
+    }
+}
