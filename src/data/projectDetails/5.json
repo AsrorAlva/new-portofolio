@@ -1,0 +1,14 @@
+{
+  "longDescription": "CMS Admin Dashboard is a web application for managing marketing, IT, human capital, and product data. I worked on backend API with Node.js, Sequelize, and frontend integration with React.",
+  "features": [
+    "Backend API using Node.js and Express",
+    "Database modeling with Sequelize and MySQL",
+    "Frontend dashboard with React",
+    "Role-based access control",
+    "Data management for multiple modules"
+  ],
+  "screenshots": [
+    "/images/Project/CMS-1.png",
+    "/images/Project/CMS-2.png"
+  ]
+}

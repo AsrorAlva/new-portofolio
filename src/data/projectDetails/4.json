@@ -1,0 +1,14 @@
+{
+  "longDescription": "Audio to Text Converter is a Python project that converts audio recordings to text. I implemented audio processing, transcription using OpenAI Whisper, and format handling.",
+  "features": [
+    "Audio file processing with Python",
+    "Transcription using OpenAI Whisper",
+    "Supports multiple audio formats",
+    "Regex-based text cleanup",
+    "Command-line interface for usage"
+  ],
+  "screenshots": [
+    "/images/Project/audio-text-1.png",
+    "/images/Project/audio-text-2.png"
+  ]
+}

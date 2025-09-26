@@ -3,12 +3,13 @@ import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { ExternalLink, Github, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import portfolioData from '../data/portfolioData.json';
 
 const Projects = ({ showAll = false, limit = 3 }) => {
   const { projects } = portfolioData;
-  const displayProjects = showAll ? projects : projects.filter(project => project.featured).slice(0, limit);
+  const displayProjects = showAll ? projects : projects.filter(p => p.featured).slice(0, limit);
+  const navigate = useNavigate();
 
   return (
     <section id="projects" className="py-20 bg-white">
@@ -20,14 +21,18 @@ const Projects = ({ showAll = false, limit = 3 }) => {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills in data analysis, machine learning, and software development.
+            Here are some of my recent projects that showcase my skills in development.
           </p>
         </div>
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {displayProjects.map((project) => (
-            <Card key={project.id} className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-slate-100 hover:border-blue-200">
+          {displayProjects.map(project => (
+            <Card
+              key={project.id}
+              className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-slate-100 hover:border-blue-200 cursor-pointer"
+              onClick={() => navigate(`/projects/${project.id}`)}
+            >
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img
@@ -43,43 +48,43 @@ const Projects = ({ showAll = false, limit = 3 }) => {
                   </div>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="p-6">
                 <CardTitle className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
                   {project.title}
                 </CardTitle>
-                
+
                 <p className="text-slate-600 mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
-                {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, index) => (
-                    <Badge key={index} variant="outline" className="text-xs border-blue-200 text-blue-700 hover:bg-blue-50">
+                  {project.technologies.map((tech, idx) => (
+                    <Badge
+                      key={idx}
+                      variant="outline"
+                      className="text-xs border-blue-200 text-blue-700 hover:bg-blue-50"
+                    >
                       {tech}
                     </Badge>
                   ))}
                 </div>
 
-                {/* Action Buttons */}
                 <div className="flex gap-3">
                   <Button
                     size="sm"
                     variant="outline"
                     className="flex-1 border-slate-300 hover:border-blue-500 hover:text-blue-600"
-                    onClick={() => window.open(project.githubUrl, '_blank')}
+                    onClick={(e) => { e.stopPropagation(); window.open(project.githubUrl, '_blank'); }}
                   >
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
+                    <Github className="w-4 h-4 mr-2" /> Code
                   </Button>
                   <Button
                     size="sm"
                     className="flex-1 bg-blue-600 hover:bg-blue-700"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
+                    onClick={(e) => { e.stopPropagation(); window.open(project.liveUrl, '_blank'); }}
                   >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
+                    <ExternalLink className="w-4 h-4 mr-2" /> Demo
                   </Button>
                 </div>
               </CardContent>

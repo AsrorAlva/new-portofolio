@@ -1,0 +1,14 @@
+{
+  "longDescription": "Netflix Clone App is a mobile application built with Dart and Flutter. I implemented movie listings, search functionality, and responsive UI for streaming experience.",
+  "features": [
+    "Implemented movie listing UI",
+    "Search and filter functionality",
+    "Local storage with SQLite",
+    "Responsive Flutter UI for mobile",
+    "Tested on multiple devices for performance"
+  ],
+  "screenshots": [
+    "/images/Project/Netflix-1.png",
+    "/images/Project/Netflix-2.png"
+  ]
+}

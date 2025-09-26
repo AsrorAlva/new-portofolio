@@ -120,18 +120,17 @@
             "featured": true,
             "category": "Mobile Development"
         },
-
         {
             "id": 2,
-            "title": "Trip Planner Budget Optimization",
-            "description": "Web application that helps users plan trips efficiently by minimizing costs. Features include destination selection, budget estimation, and optimized travel itinerary.",
-            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=300&fit=crop",
-            "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-            "githubUrl": "https://github.com/AsrorAlva/backend-tripplanner-web.git",
-            "liveUrl": "https://github.com/AsrorAlva/frontend-tripplanner-web.git",
+            "title": "VR Candi Borobudur",
+            "description": "Interactive VR experience of Borobudur Temple for Oculus Quest 2, focusing on the lower and upper zones with immersive guided tour elements.",
+            "image": "/images/Project/VRBorobudur.png",
+            "technologies": ["Unity", "C#", "Oculus Quest 2", "VR Interaction", "3D Modeling"],
+            "githubUrl": "https://github.com/AlvaaPy/VR-Borobudur.git",
             "featured": true,
-            "category": "Web Development"
+            "category": "VR"
         },
+
         {
             "id": 3,
             "title": "Notes App",
@@ -177,6 +176,18 @@
             "liveUrl": "",
             "featured": false,
             "category": "Mobile Development"
+        },
+
+        {
+            "id": 7,
+            "title": "Trip Planner Budget Optimization",
+            "description": "Web application that helps users plan trips efficiently by minimizing costs. Features include destination selection, budget estimation, and optimized travel itinerary.",
+            "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=300&fit=crop",
+            "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+            "githubUrl": "https://github.com/AsrorAlva/backend-tripplanner-web.git",
+            "liveUrl": "https://github.com/AsrorAlva/frontend-tripplanner-web.git",
+            "featured": true,
+            "category": "Web Development"
         }
 
     ],

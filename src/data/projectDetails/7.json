@@ -1,0 +1,14 @@
+{
+  "longDescription": "Trip Planner Budget Optimization is a web application that helps users plan trips efficiently by minimizing costs. I worked on frontend and backend integration.",
+  "features": [
+    "Implemented budget optimization algorithm",
+    "Destination selection and itinerary planning",
+    "Frontend UI using HTML, CSS, JavaScript",
+    "Backend development using PHP and MySQL",
+    "Tested responsive web design across devices"
+  ],
+  "screenshots": [
+    "/images/Project/TripPlanner-1.png",
+    "/images/Project/TripPlanner-2.png"
+  ]
+}

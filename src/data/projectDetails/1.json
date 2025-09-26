@@ -1,0 +1,14 @@
+{
+  "longDescription": "I developed the Mobile Developer Trip Plan app as a Flutter mobile application. My role included designing the UI, implementing itinerary management features, and integrating REST API with Laravel backend.",
+  "features": [
+    "UI/UX design for mobile screens",
+    "Implemented schedule and trip management",
+    "Integrated REST API endpoints with Laravel backend",
+    "Database management using MySQL",
+    "Tested app on Android and iOS devices"
+  ],
+  "screenshots": [
+    "/images/Project/MobileTripPlan-1.png",
+    "/images/Project/MobileTripPlan-2.png"
+  ]
+}
