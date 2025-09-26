@@ -6,7 +6,8 @@
         "email": "asroralva1905@gmail.com",
         "phone": "+6289678904782",
         "location": "Bogor, Jawa Barat",
-        "resumeUrl": "/resume.pdf"
+        "resumeUrl": "/resume_IT.pdf",
+        "resumeNonItUrl": "/resume_NonIT.pdf"
     },
     "hero": {
         "greeting": "Hi, I'm",

@@ -6,15 +6,18 @@ import portfolioData from '../data/portfolioData.json';
 const Hero = () => {
   const { personal, hero } = portfolioData;
 
-  const handleDownloadResume = () => {
-    // Mock download functionality
+  const handleDownloadResume = (url) => {
+    if (!url) return;
     const link = document.createElement('a');
-    link.href = personal.resumeUrl;
-    link.download = `${personal.fullName.replace(' ', '_')}_Resume.pdf`;
+    link.href = url;
+    link.download = url.includes('NonIt')
+      ? `${personal.fullName.replace(' ', '_')}_Resume_NonIT.pdf`
+      : `${personal.fullName.replace(' ', '_')}_Resume_IT.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
+
 
   const handleContactScroll = () => {
     const contactSection = document.getElementById('contact');
@@ -63,13 +66,16 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          {/* IT Resume */}
           <Button
-            onClick={handleDownloadResume}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            onClick={() => handleDownloadResume(personal.resumeUrl)}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <Download className="w-5 h-5 mr-2" />
-            View Resume
+            Resume IT
           </Button>
+
+          {/* Contact Me */}
           <Button
             variant="outline"
             onClick={handleContactScroll}
@@ -78,7 +84,17 @@ const Hero = () => {
             <Mail className="w-5 h-5 mr-2" />
             Contact Me
           </Button>
+
+          {/* Non-IT Resume */}
+          <Button
+            onClick={() => handleDownloadResume(personal.resumeNonItUrl)}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            <Download className="w-5 h-5 mr-2" />
+            Resume Non-IT
+          </Button>
         </div>
+
       </div>
     </section>
   );
