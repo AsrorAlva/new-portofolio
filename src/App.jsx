@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import { Toaster } from "./components/ui/toaster";
 import ProjectDetail from "./pages/ProjectDetail";
-import NotFound from "./pages/notfound";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
