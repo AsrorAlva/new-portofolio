@@ -3,9 +3,9 @@
   "features": [
     "UI/UX design for mobile screens",
     "Implemented schedule and trip management",
-    "Integrated REST API endpoints with Laravel backend",
+    "Integrated REST API endpoints with Laravel 10 backend",
     "Database management using MySQL",
-    "Tested app on Android and iOS devices"
+    "Tested app on Android devices"
   ],
   "screenshots": [
     "/images/Project/MobileTripPlan-1.png",

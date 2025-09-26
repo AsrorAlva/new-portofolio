@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { useNavigate, Link } from 'react-router-dom';
-import { ArrowLeft, Filter } from 'lucide-react';
+import { ArrowLeft, Filter, Github, ExternalLink } from 'lucide-react';
 import portfolioData from '../data/portfolioData.json';
 import Footer from '../components/Footer';
 
@@ -59,23 +59,72 @@ const ProjectsPage = () => {
             >
               <CardHeader className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
-                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4">
                     <Badge variant="secondary" className="bg-white/90 text-slate-700">{project.category}</Badge>
                   </div>
-                  {project.featured && <div className="absolute top-4 left-4"><Badge className="bg-blue-600 text-white">Featured</Badge></div>}
+                  {project.featured && (
+                    <div className="absolute top-4 left-4">
+                      <Badge className="bg-blue-600 text-white">Featured</Badge>
+                    </div>
+                  )}
                 </div>
               </CardHeader>
+
               <CardContent className="p-6">
-                <CardTitle className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">{project.title}</CardTitle>
+                <CardTitle className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                  {project.title}
+                </CardTitle>
                 <p className="text-slate-600 mb-4 leading-relaxed">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, idx) => <Badge key={idx} variant="outline" className="text-xs border-blue-200 text-blue-700 hover:bg-blue-50">{tech}</Badge>)}
+                  {project.technologies.map((tech, idx) => (
+                    <Badge key={idx} variant="outline" className="text-xs border-blue-200 text-blue-700 hover:bg-blue-50">{tech}</Badge>
+                  ))}
+                </div>
+
+                {/* Buttons Code & Demo */}
+                <div className="flex gap-3">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 border-slate-300 hover:border-blue-500 hover:text-blue-600"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (project.githubUrl) {
+                        window.open(project.githubUrl, '_blank');
+                      } else {
+                        navigate('/notfound');
+                      }
+                    }}
+                  >
+                    <Github className="w-4 h-4 mr-2" /> Code
+                  </Button>
+
+                  <Button
+                    size="sm"
+                    className="flex-1 bg-blue-600 hover:bg-blue-700"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (project.liveUrl) {
+                        window.open(project.liveUrl, '_blank');
+                      } else {
+                        navigate('/notfound');
+                      }
+                    }}
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" /> Demo
+                  </Button>
                 </div>
               </CardContent>
             </Card>
+
           ))}
+
         </div>
       </main>
 

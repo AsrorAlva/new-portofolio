@@ -75,14 +75,29 @@ const Projects = ({ showAll = false, limit = 3 }) => {
                     size="sm"
                     variant="outline"
                     className="flex-1 border-slate-300 hover:border-blue-500 hover:text-blue-600"
-                    onClick={(e) => { e.stopPropagation(); window.open(project.githubUrl, '_blank'); }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (project.githubUrl) {
+                        window.open(project.githubUrl, '_blank');
+                      } else {
+                        navigate('/notfound');
+                      }
+                    }}
                   >
                     <Github className="w-4 h-4 mr-2" /> Code
                   </Button>
+
                   <Button
                     size="sm"
                     className="flex-1 bg-blue-600 hover:bg-blue-700"
-                    onClick={(e) => { e.stopPropagation(); window.open(project.liveUrl, '_blank'); }}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (project.liveUrl) {
+                        window.open(project.liveUrl, '_blank');
+                      } else {
+                        navigate('/notfound');
+                      }
+                    }}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" /> Demo
                   </Button>

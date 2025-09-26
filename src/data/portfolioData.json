@@ -68,7 +68,7 @@
             },
             {
                 "name": "Golang",
-                "level": 30,
+                "level": 15,
                 "icon": "/icons/golang.png"
             }
 
@@ -127,6 +127,7 @@
             "image": "/images/Project/VRBorobudur.png",
             "technologies": ["Unity", "C#", "Oculus Quest 2", "VR Interaction", "3D Modeling"],
             "githubUrl": "https://github.com/AlvaaPy/VR-Borobudur.git",
+            "liveUrl" : "https://drive.google.com/file/d/1UPCYOLY-w7QZwsbR9FLBFSt3ru_Uk1qP/view?usp=drive_link",
             "featured": true,
             "category": "VR"
         },
@@ -161,7 +162,7 @@
             "image": "https://images.unsplash.com/photo-1581091870622-6c54e2901edb?w=500&h=300&fit=crop",
             "technologies": ["Node.js", "Express", "MySQL", "Sequelize", "React"],
             "githubUrl": "https://github.com/AlvaaPy/CMS.git",
-            "liveUrl": "",
+            "liveUrl": "https://github.com/AlvaaPy/CMS-Backend.git",
             "featured": false,
             "category": "Web Development"
         },
@@ -186,7 +187,7 @@
             "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
             "githubUrl": "https://github.com/AsrorAlva/backend-tripplanner-web.git",
             "liveUrl": "https://github.com/AsrorAlva/frontend-tripplanner-web.git",
-            "featured": true,
+            "featured": false,
             "category": "Web Development"
         }
 

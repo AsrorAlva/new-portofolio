@@ -1,12 +1,12 @@
 {
   "longDescription": "VR Candi Borobudur is a fully interactive virtual reality experience designed for Oculus Quest 2. The project focuses on delivering an immersive exploration of Borobudur Temple, highlighting the lower and upper zones while keeping the user engaged with interactive elements and narrative storytelling.",
   "features": [
-    "Interactive navigation through lower and upper zones",
-    "Match cut transitions for a cinematic experience",
-    "Voice-over narration to guide users through history and details",
-    "Optimized VR performance for Oculus Quest 2",
-    "Interactive objects to explore key parts of the temple",
-    "Immersive audio and visual environment to enhance realism"
+    "Splash screen and main menu",
+    "Spawn point system for user entry",
+    "Interactive 3D reliefs, including Lalita and Jataka stories",
+    "Voice-over narration recorded for storytelling",
+    "Fully interactive 3D environment",
+    "Optimized VR experience for Oculus Quest 2"
   ],
   "screenshots": [
     "/images/Project/VRBorobudur-1.png",
