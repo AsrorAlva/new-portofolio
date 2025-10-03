@@ -127,7 +127,7 @@
             "image": "/images/Project/VRBorobudur.png",
             "technologies": ["Unity", "C#", "Oculus Quest 2", "VR Interaction", "3D Modeling"],
             "githubUrl": "https://github.com/AlvaaPy/VR-Borobudur.git",
-            "liveUrl": "https://drive.google.com/file/d/1UPCYOLY-w7QZwsbR9FLBFSt3ru_Uk1qP/view?usp=drive_link",
+            "liveUrl": "",
             "featured": true,
             "category": "VR"
         },
