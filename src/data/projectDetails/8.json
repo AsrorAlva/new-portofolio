@@ -1,0 +1,14 @@
+{
+  "longDescription": "Notes App is a full-stack web application built with Next.js and PostgreSQL. I implemented authentication, CRUD operations, and responsive UI for seamless note-taking.",
+  "features": [
+    "User authentication system",
+    "Create, read, update, delete notes functionality",
+    "Responsive UI using Tailwind CSS",
+    "Database management with PostgreSQL and Prisma",
+    "Optimized performance for web application"
+  ],
+  "screenshots": [
+    "/images/Project/Notes-1.png",
+    "/images/Project/Notes-2.png"
+  ]
+}

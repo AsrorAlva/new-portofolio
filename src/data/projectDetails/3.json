@@ -1,14 +1,15 @@
 {
-  "longDescription": "Notes App is a full-stack web application built with Next.js and PostgreSQL. I implemented authentication, CRUD operations, and responsive UI for seamless note-taking.",
+  "longDescription": "Go Test API adalah RESTful API backend sederhana yang dibangun menggunakan Golang dan PostgreSQL. Project ini mengimplementasikan endpoint CRUD untuk resource 'Movies' dengan struktur folder yang rapi (modular) dan menggunakan Gorilla Mux sebagai router. Proyek ini cocok untuk belajar dasar backend development menggunakan Go.",
   "features": [
-    "User authentication system",
-    "Create, read, update, delete notes functionality",
-    "Responsive UI using Tailwind CSS",
-    "Database management with PostgreSQL and Prisma",
-    "Optimized performance for web application"
+    "CRUD lengkap untuk resource Movies",
+    "Routing menggunakan Gorilla Mux",
+    "Koneksi database PostgreSQL",
+    "Struktur project modular dan clean",
+    "Konfigurasi environment melalui file .env",
+    "Mendukung Docker untuk kemudahan development"
   ],
   "screenshots": [
-    "/images/Project/Notes-1.png",
-    "/images/Project/Notes-2.png"
+    "/images/Project/GoTestAPI-1.png",
+    "/images/Project/GoTestAPI-2.png"
   ]
 }

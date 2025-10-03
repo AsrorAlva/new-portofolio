@@ -127,21 +127,23 @@
             "image": "/images/Project/VRBorobudur.png",
             "technologies": ["Unity", "C#", "Oculus Quest 2", "VR Interaction", "3D Modeling"],
             "githubUrl": "https://github.com/AlvaaPy/VR-Borobudur.git",
-            "liveUrl" : "https://drive.google.com/file/d/1UPCYOLY-w7QZwsbR9FLBFSt3ru_Uk1qP/view?usp=drive_link",
+            "liveUrl": "https://drive.google.com/file/d/1UPCYOLY-w7QZwsbR9FLBFSt3ru_Uk1qP/view?usp=drive_link",
             "featured": true,
             "category": "VR"
         },
 
         {
             "id": 3,
-            "title": "Notes App",
-            "description": "A full-stack notes management web application built with Next.js and PostgreSQL. Features include user authentication, create/read/update/delete notes, and responsive UI for seamless note-taking.",
-            "image": "/images/Project/Notes.png",
-            "technologies": ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
-            "githubUrl": "https://github.com/AlvaaPy/notes-app-nextjs.git",
+            "title": "Go Test API",
+            "description": "RESTful API sederhana untuk manajemen data film, dibangun dengan Golang dan PostgreSQL. Mendukung operasi CRUD (Create, Read, Update, Delete) dengan struktur clean dan modular.",
+            "image": "/images/Project/GoTestAPI.png",
+            "technologies": ["Golang", "PostgreSQL"],
+            "githubUrl": "https://github.com/AsrorAlva/go-test-api.git",
             "featured": true,
-            "category": "Web Development"
+            "category": "Backend Development"
+
         },
+
 
         {
             "id": 4,
@@ -189,7 +191,19 @@
             "liveUrl": "https://github.com/AsrorAlva/frontend-tripplanner-web.git",
             "featured": false,
             "category": "Web Development"
+        },
+
+        {
+            "id": 8,
+            "title": "Notes App",
+            "description": "A full-stack notes management web application built with Next.js and PostgreSQL. Features include user authentication, create/read/update/delete notes, and responsive UI for seamless note-taking.",
+            "image": "/images/Project/Notes.png",
+            "technologies": ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+            "githubUrl": "https://github.com/AlvaaPy/notes-app-nextjs.git",
+            "featured": true,
+            "category": "Web Development"
         }
+
 
     ],
     "experience": [{
