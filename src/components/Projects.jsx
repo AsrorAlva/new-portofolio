@@ -43,9 +43,10 @@ const Projects = ({ showAll = false, limit = 3 }) => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4">
                     <Badge variant="secondary" className="bg-white/90 text-slate-700">
-                      {project.category}
+                      {Array.isArray(project.category) ? project.category[0] : project.category}
                     </Badge>
                   </div>
+
                 </div>
               </CardHeader>
 

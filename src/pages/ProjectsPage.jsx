@@ -12,10 +12,12 @@ const ProjectsPage = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = React.useState('All');
 
-  const categories = ['All', ...new Set(projects.map(p => p.category))];
+
+  const categories = ['All', ...new Set(projects.flatMap(p => p.category))];
   const filteredProjects = selectedCategory === 'All'
     ? projects
-    : projects.filter(p => p.category === selectedCategory);
+    : projects.filter(p => p.category.includes(selectedCategory));
+
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -66,8 +68,11 @@ const ProjectsPage = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 right-4">
-                    <Badge variant="secondary" className="bg-white/90 text-slate-700">{project.category}</Badge>
+                    <Badge variant="secondary" className="bg-white/90 text-slate-700">
+                      {Array.isArray(project.category) ? project.category[0] : project.category}
+                    </Badge>
                   </div>
+
                   {project.featured && (
                     <div className="absolute top-4 left-4">
                       <Badge className="bg-blue-600 text-white">Featured</Badge>
