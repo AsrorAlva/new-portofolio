@@ -105,3 +105,25 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 1rem;
+  animation: marquee 20s linear infinite;
+}
+
+/* Kecepatan & arah geser */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

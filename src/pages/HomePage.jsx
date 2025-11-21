@@ -12,8 +12,8 @@ const HomePage = () => {
     <div className="min-h-screen">
       <Hero />
       <About />
-      <Skills />
       <Projects showAll={false} limit={3} />
+      <Skills />
       <Experience />
       <Contact />
       <Footer />

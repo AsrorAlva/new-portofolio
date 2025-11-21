@@ -30,11 +30,11 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50 px-4">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Profile Image */}
-        <div className="relative mx-auto w-32 h-32 mb-8">
+        <div className="relative mx-auto w-56 h-56 mb-8">
           <img
             src={personal.profileImage}
             alt={personal.fullName}
-            className="w-full h-full rounded-full object-cover shadow-lg ring-4 ring-white"
+            className="w-full h-full rounded-full object-cover shadow-lg ring-4 ring-white "
           />
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
         </div>
@@ -66,14 +66,6 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-          {/* IT Resume */}
-          <Button
-            onClick={() => handleDownloadResume(personal.resumeUrl)}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            <Download className="w-5 h-5 mr-2" />
-            Resume IT
-          </Button>
 
           {/* Contact Me */}
           <Button
@@ -83,15 +75,6 @@ const Hero = () => {
           >
             <Mail className="w-5 h-5 mr-2" />
             Contact Me
-          </Button>
-
-          {/* Non-IT Resume */}
-          <Button
-            onClick={() => handleDownloadResume(personal.resumeNonItUrl)}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            <Download className="w-5 h-5 mr-2" />
-            Resume Non-IT
           </Button>
         </div>
 

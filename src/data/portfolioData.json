@@ -1,7 +1,7 @@
 {
     "personal": {
         "fullName": "Muhammad Asror Alva",
-        "role": "Informatics Engineering  | Fullstack & Data Enthusiast",
+        "role": "Software Engineering",
         "profileImage": "/images/me.jpg",
         "email": "asroralva1905@gmail.com",
         "phone": "+6289678904782",
@@ -279,11 +279,6 @@
             "icon": "/icons/github.png"
         },
         {
-            "platform": "GitHub",
-            "url": "https://github.com/AlvaaPy",
-            "icon": "/icons/github.png"
-        },
-        {
             "platform": "Instagram",
             "url": "https://www.instagram.com/asroralva/#",
             "icon": "/icons/ig.png"
@@ -309,8 +304,16 @@
                 "href": "/projects"
             },
             {
-                "name": "Contact",
-                "href": "/#contact"
+                "name": "Blog",
+                "href": "/blog"
+            },
+            {
+                "name": "Resume",
+                "href": "/resume"
+            },
+            {
+                "name": "Cheetsheet",
+                "href": "/cheetsheet"
             }
         ]
     }

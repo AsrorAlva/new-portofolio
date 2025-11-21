@@ -57,7 +57,7 @@ const getIcon = (iconName) => {
             <nav className="space-y-2">
               {footer.navigation.map((link, index) => (
                 <div key={index}>
-                  {link.href.startsWith('/projects') ? (
+                  {link.href.startsWith('/projects') || link.href.startsWith('/resume') || link.href.startsWith('/blog') || link.href.startsWith('/cheetsheet') ? (
                     <a
                       href={link.href}
                       className="text-slate-400 hover:text-blue-400 transition-colors duration-300 block"
@@ -123,9 +123,9 @@ const getIcon = (iconName) => {
             </p>
             
             <div className="flex items-center gap-2 text-slate-400 text-sm">
-              <span>Made with</span>
+              <span>Built with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>and lots of coffee</span>
+              <span>React+Vite, Tailwind, and Vercel</span>
             </div>
           </div>
         </div>
